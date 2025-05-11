@@ -222,11 +222,22 @@ export function JSQuestionGenerator() {
   const [currentQuestion, setCurrentQuestion] = useState<number | null>(null)
   const [showAnswer, setShowAnswer] = useState(false)
 
+  const getSecureRandomIndex = (length: number) => {
+    const array = new Uint32Array(1);
+    window.crypto.getRandomValues(array);
+    return array[0] % length;
+  };
+
   const generateQuestion = () => {
-    const randomIndex = Math.floor(Math.random() * jsQuestions.length)
-    setCurrentQuestion(randomIndex)
-    setShowAnswer(false)
-  }
+    let newIndex;
+    do {
+      newIndex = getSecureRandomIndex(jsQuestions.length);
+    } while (newIndex === currentQuestion);
+
+    setCurrentQuestion(newIndex);
+    setShowAnswer(false);
+  };
+
 
   const toggleAnswer = () => {
     setShowAnswer(!showAnswer)
