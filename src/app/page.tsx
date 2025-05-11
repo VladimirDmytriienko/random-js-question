@@ -8,7 +8,8 @@ export default function Home() {
         <p className="mx-auto max-w-2xl text-muted-foreground">
           Test your JavaScript knowledge with randomly generated questions. Click the button below to get started!
         </p>
-      </div> */} // On mobile disable this block
+      </div> */}
+      {/* On mobile disable this block */}
       <div className="flex justify-center">
         <JSQuestionGenerator />
       </div>
