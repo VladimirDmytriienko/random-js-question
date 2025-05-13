@@ -12,8 +12,8 @@ export function SiteHeader() {
             random JS question
           </Link>
         </div>
-        {/* <nav className="flex items-center gap-6">
-          <Link href="/" className="text-sm font-medium transition-colors hover:text-primary">
+        <nav className="flex items-center gap-6">
+          {/* <Link href="/" className="text-sm font-medium transition-colors hover:text-primary">
             Home
           </Link>
           <Link href="/about" className="text-sm font-medium transition-colors hover:text-primary">
@@ -24,9 +24,9 @@ export function SiteHeader() {
           </Link>
           <Link href="/contact" className="text-sm font-medium transition-colors hover:text-primary">
             Contact
-          </Link>
+          </Link> */}
           <ModeToggle />
-        </nav> */}
+        </nav>
       </div>
     </header>
   )

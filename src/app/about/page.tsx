@@ -2,9 +2,9 @@ export default function AboutPage() {
   return (
     <div className="container py-10">
       <div className="mx-auto max-w-3xl space-y-6">
-        <h1 className="text-3xl font-bold">About JS Quiz</h1>
+        <h1 className="text-3xl font-bold">About Random JS question</h1>
         <p>
-          JS Quiz is a platform designed to help developers test and improve their JavaScript knowledge through randomly
+          Random JS question is a platform designed to help developers test and improve their JavaScript knowledge through randomly
           generated questions covering various aspects of the language.
         </p>
         <p>
