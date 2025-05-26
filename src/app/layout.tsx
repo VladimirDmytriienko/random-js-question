@@ -4,6 +4,7 @@ import "./globals.css";
 import { ThemeProvider } from 'next-themes';
 import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from '@/components/site-footer';
+import { BackgroundLines } from '@/components/ui/background-lines';
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -36,11 +37,16 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <SiteHeader />
-          {children}
-          <SiteFooter />
+          <BackgroundLines className="flex flex-col flex-1">
+            <SiteHeader />
+            <main className="flex-1 flex flex-col">
+              {children}
+            </main>
+            <SiteFooter />
+          </BackgroundLines>
         </ThemeProvider>
       </body>
+
     </html>
   );
 }

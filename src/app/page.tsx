@@ -2,7 +2,7 @@ import { JSQuestionGenerator } from "@/components/js-question-generator"
 
 export default function Home() {
   return (
-    <div className="container py-10 px-4 text-center block mx-auto">
+    <div className="container py-10 px-4 text-center block mx-auto backdrop-blur-[2px] h-full m-auto">
       <div className="hidden sm:block mb-10 space-y-4 text-center">
         <h1 className="text-4xl font-bold tracking-tight">JavaScript Quiz Challenge</h1>
         <p className="mx-auto max-w-2xl text-muted-foreground">

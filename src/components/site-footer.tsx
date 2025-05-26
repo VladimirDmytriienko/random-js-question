@@ -8,12 +8,12 @@ export function SiteFooter() {
           &copy; {new Date().getFullYear()} random JS question. All rights reserved.
         </div>
         <div className="flex gap-4 text-sm text-muted-foreground">
-          <Link href="/terms" className="transition-colors hover:text-foreground">
+          {/* <Link href="/terms" className="transition-colors hover:text-foreground">
             Terms
           </Link>
           <Link href="/privacy" className="transition-colors hover:text-foreground">
             Privacy
-          </Link>
+          </Link> */}
           <a
             href="https://github.com/VladimirDmytriienko"
             target="_blank"
